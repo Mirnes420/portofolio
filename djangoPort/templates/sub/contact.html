@@ -1,0 +1,39 @@
+{% block contact %}
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+  <section id="contact">
+    <h2 class="section-title"style="font-family: 'Orbitron', sans-serif; text-shadow: 0 0 5px #00f0ff;">Let's build something awesome together.</h2>
+
+    <hr class="w-100">
+
+    <div class="row align-items-center">
+      <!-- Contact Form (Left) -->
+      <div class="col-md-6" data-aos="fade-up">
+        <form id="contactForm" action="{% url 'contact' %}" method="post" class="p-3 shadow">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="email" class="form-label"></label>
+            <input type="email" id="email" name="email" class="form-control p-3" placeholder="Your E-Mail:" required>
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label"></label>
+            <input type="text" id="subject" name="subject" class="form-control p-3" placeholder="Subject:" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label"></label>
+            <textarea id="message" name="message" rows="4" class="form-control p-3" placeholder="Message:" required></textarea>
+          </div>
+          <input type="submit" value="Send message" class="btn btn-primary">
+        </form>
+      </div>
+
+      <!-- Cool Avatar (Right) -->
+      <div class="col-md-6 text-center" data-aos="fade-left">
+        <img src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif" alt="Coding Avatar" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+      
+      </div>
+    </div>
+  </section>
+</div>
+
+{% endblock contact %}

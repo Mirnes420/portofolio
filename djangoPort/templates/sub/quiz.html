@@ -1,0 +1,21 @@
+{% block quiz %}
+
+<div class="quiz-container">
+  <div class="quiz-header">
+    Quiz Project
+    <div class="quiz-stats">
+      <span id="correctCount" class="text-success">0</span>
+      <span id="incorrectCount" class="text-danger"> 0</span>
+    </div>
+  </div>
+  <div class="quiz-body" id="quiz-body">
+    <!-- Questions will be inserted here -->
+  </div>
+  <div id="quizAnswer">
+    <button class="quiz-submit btn btn-light text-dark" onclick="validate(true)">True</button>
+    <button class="quiz-submit btn btn-danger text-light" onclick="validate(false)">False</button>
+  </div>
+</div>
+
+
+{% endblock quiz %}

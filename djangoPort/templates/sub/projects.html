@@ -1,0 +1,70 @@
+{% load static %}
+
+
+
+<p id="projects-section"></p>
+<br>
+<!--projects section-->
+<div id="projects" class="container" data-aos="fade-up" data-aos-duration="1000">
+  <h1 id="welcome" class="section-title">My Work</h1>
+  <hr>
+  <br>
+ <!--chatbot section-->
+
+ <!--quiz section-->
+
+ <div class="project">
+  <div class="col-12 col-md-6">
+    <div id="description" class="description">
+      <h2>Trivia Quiz</h2>
+      <p>Trivia Quiz Project utilizes HTML, CSS, and JavaScript to fetch a series of true/false questions from the Open Trivia Database API and present them sequentially to users. JavaScript handles fetching data asynchronously, manipulating the DOM to display questions, and providing immediate feedback on user responses. The project's frontend, composed of HTML for structure and CSS for styling, ensures a user-friendly interface with responsive design elements. Essential skills for this project include API integration, asynchronous programming, DOM manipulation, and frontend development techniques. Through these components, the quiz application delivers an interactive experience where users can test their knowledge and track their performance in real-time.</p>
+    </div>
+    </div>
+  {% include 'sub/quiz.html' %} 
+
+
+    </div>
+
+    <div class="project">
+      <div class="col-md-6">
+        <div id="description" class="description">
+          <h2>Routes API</h2>
+          <p>
+            This project is a Flask-based REST API designed to help users find the most cost-effective route between two locations by intelligently integrating with the Google Maps API and a custom dataset of gas stations. The core functionality analyzes available fuel stops along a given route and dynamically selects the optimal ones based on profitability, distance, and fuel prices. It leverages geospatial calculations, external API integration, and custom business logic to deliver optimized travel plans for drivers looking to minimize fuel costs. This solution is particularly useful for logistics companies, long-haul drivers, or budget-conscious travelers.
+          </p>
+          <p>
+            Technologies used include Flask for backend API development, Google Maps API for geolocation and routing, and custom Python scripts for data processing and optimization. The project emphasizes practical use of API composition, route planning, and efficient data modeling.
+          </p>
+        </div>
+      </div>
+      <div class="quiz-container">
+        <!-- Fuel Routes Project Image -->
+      <img src="{% static 'imgs/fuel-routes.png' %}" alt="Fuel Routes Project"
+      class="img-fluid project-image" onclick="openModal(this.src)" style="cursor: pointer;" />
+
+      <!-- Modal -->
+      <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage">
+      </div>
+
+      </div>
+    </div>
+
+
+
+        
+      </div>
+    </div>
+    
+    
+    
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+ 
+
+    </div>

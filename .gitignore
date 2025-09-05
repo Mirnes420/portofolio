@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Flutter
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+ios/Pods/
+android/.gradle/
+android/app/build/
+windows/
+linux/
+macos/
+
+# System files
+*.log
+*.lnk
+*.zip
+desktop.ini
+.DS_Store
+Thumbs.db

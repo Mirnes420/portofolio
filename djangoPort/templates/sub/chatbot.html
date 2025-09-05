@@ -1,0 +1,24 @@
+{% block chatbot %}
+
+<div id="chatbotContainer" class="chatbot-container">
+  <div class="chatbot-header">Chatbot Project</div>
+  <div class="chatbot-body" id="chatbot-body">
+    <p class="small text-secondary">Welcome to the chatbot. Ask me anything.</p>
+    <div id="suggestions">
+      <button class="suggestedQuestion btn btn-primary text-light" onclick="sendMessage('Where is your endpoint?')">Where is your endpoint?</button>
+      <button class="suggestedQuestion btn btn-primary text-light" onclick="sendMessage('Why are you here?')">Why are you here?</button>
+      <button class="suggestedQuestion btn btn-primary text-light" onclick="sendMessage('About Mirnes?')">About Mirnes?</button>
+    </div>
+  </div>
+  <div id="answerButton">
+    <input type="text" class="chatbot-input small" id="user-input" placeholder="Send me a message.." onkeydown="if (event.key === 'Enter') sendMessage()">
+
+    <button class="chatbot-submit small btn btn-primary text-light" onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+
+
+
+
+{% endblock chatbot %}
